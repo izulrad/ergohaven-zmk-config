@@ -119,10 +119,10 @@
 
         sym_en_1 {
             bindings = <
-&none  &none     &none          &none        &none      &none                  &kp GRAVE  &kp APOS   &kp DQT    &kp AT     &kp HASH  &kp BACKSPACE
-&none  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &none                  &kp EXCL   &kp DOT    &kp COMMA  &kp COLON  &kp SEMI  &kp QMARK
-&none  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none                  &kp TILDE  &kp CARET  &kp UNDER  &kp AMPS   &kp DLLR  &none
-                 &kp DEL        &none        &none      &none  &none    &none  &mo 6      &none      &kp PRCNT  &none
+&none    &none     &none          &none        &none      &none                    &kp GRAVE  &kp APOS   &kp DQT    &kp AT     &kp HASH  &kp BACKSPACE
+&kp TAB  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &none                    &kp EXCL   &kp DOT    &kp COMMA  &kp COLON  &kp SEMI  &kp QMARK
+&none    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp DEL                  &kp TILDE  &kp CARET  &kp UNDER  &kp AMPS   &kp DLLR  &none
+                   &none          &none        &none      &none    &none    &none  &mo 6      &none      &kp PRCNT  &none
             >;
 
             label = "S-EN-1";
@@ -141,10 +141,10 @@
 
         sym_ru_1 {
             bindings = <
-&none  &none     &none          &none        &none      &none                  &en GRAVE    &en APOS    &kp RU_DOUBLE_QUOTES  &en AT        &en HASH     &kp BACKSPACE
-&none  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &none                  &kp RU_EXCL  &kp RU_DOT  &kp RU_COMMA          &kp RU_COLON  &kp RU_SEMI  &kp RU_QUESTION
-&none  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none                  &en TILDE    &en CARET   &kp RU_UNDER          &en AMPS      &en DLLR     &none
-                 &kp DEL        &none        &none      &none  &none    &none  &mo 6        &none       &kp RU_PRCNT          &none
+&none    &none     &none          &none        &none      &none                    &en GRAVE    &en APOS    &kp RU_DOUBLE_QUOTES  &en AT        &en HASH     &kp BACKSPACE
+&kp TAB  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &none                    &kp RU_EXCL  &kp RU_DOT  &kp RU_COMMA          &kp RU_COLON  &kp RU_SEMI  &kp RU_QUESTION
+&none    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp DEL                  &en TILDE    &en CARET   &kp RU_UNDER          &en AMPS      &en DLLR     &none
+                   &none          &none        &none      &none    &none    &none  &mo 6        &none       &kp RU_PRCNT          &none
             >;
 
             label = "S-RU-1";
