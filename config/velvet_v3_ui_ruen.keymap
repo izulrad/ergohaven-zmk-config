@@ -125,7 +125,7 @@
 &none      &none     &none          &none        &none      &none                    &kp GRAVE  &kp APOS   &kp DQT    &kp AT     &kp HASH  &kp BACKSPACE
 &kp TAB    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &none                    &kp EXCL   &kp DOT    &kp COMMA  &kp COLON  &kp SEMI  &kp QMARK
 &kp LSHFT  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp DEL                  &kp TILDE  &kp CARET  &kp UNDER  &kp AMPS   &kp DLLR  &kp RSHFT
-                     &none          &none        &none      &none    &none    &none  &mo 9      &none      &kp PRCNT  &none
+                     &none          &none        &none      &none    &none    &none  &mo 10     &none      &kp PRCNT  &none
             >;
 
             label = "S-EN-1";
@@ -136,7 +136,7 @@
 &none      &layer_ru  &layer_en  &kp LBRC  &kp RBRC  &kp BSLH                  &kp FSLH  &kp N7  &kp N8  &kp N9   &kp MINUS  &kp BACKSPACE
 &kp CAPS   &kp LT     &kp GT     &kp LPAR  &kp RPAR  &kp PIPE                  &kp STAR  &kp N4  &kp N5  &kp N6   &kp PLUS   &none
 &kp RSHFT  &none      &none      &kp LBKT  &kp RBKT  &none                     &none     &kp N1  &kp N2  &kp N3   &kp EQUAL  &kp RSHFT
-                      &none      &none     &none     &mo 9     &none    &none  &none     &none   &kp N0  &kp DOT
+                      &none      &none     &none     &mo 10    &none    &none  &none     &none   &kp N0  &kp DOT
             >;
 
             label = "S-EN-2";
@@ -157,7 +157,7 @@
 &none      &none     &none          &none        &none      &none                    &en GRAVE    &en APOS    &kp RU_DOUBLE_QUOTES  &en AT        &en HASH     &kp BACKSPACE
 &kp TAB    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &none                    &kp RU_EXCL  &kp RU_DOT  &kp RU_COMMA          &kp RU_COLON  &kp RU_SEMI  &kp RU_QUESTION
 &kp LSHFT  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp DEL                  &en TILDE    &en CARET   &kp RU_UNDER          &en AMPS      &en DLLR     &kp LSHFT
-                     &none          &none        &none      &none    &none    &none  &mo 9        &none       &kp RU_PRCNT          &none
+                     &none          &none        &none      &none    &none    &none  &mo 10       &none       &kp RU_PRCNT          &none
             >;
 
             label = "S-RU-1";
@@ -168,7 +168,7 @@
 &none      &layer_ru  &layer_en  &en LBRC     &en RBRC     &kp RU_BSLH                  &kp RU_FSLH  &kp N7  &kp N8  &kp N9      &kp RU_MINUS  &kp BACKSPACE
 &kp CAPS   &en LT     &en GT     &kp RU_LPAR  &kp RU_RPAR  &en PIPE                     &kp RU_STAR  &kp N4  &kp N5  &kp N6      &kp RU_PLUS   &none
 &kp LSHFT  &none      &none      &en LBKT     &en RBKT     &none                        &none        &kp N1  &kp N2  &kp N3      &kp RU_EQUAL  &kp RSHFT
-                      &none      &none        &none        &mo 9        &none    &none  &none        &none   &kp N0  &kp RU_DOT
+                      &none      &none        &none        &mo 10       &none    &none  &none        &none   &kp N0  &kp RU_DOT
             >;
 
             label = "S-RU-2";
@@ -176,13 +176,23 @@
 
         mouse {
             bindings = <
-&none  &none  &none     &none     &none     &none                  &none  &none  &none  &none  &none           &none
-&none  &mo 8  &mkp MB2  &mkp MB3  &mkp MB1  &mo 7                  &none  &none  &none  &mo 9  &mo 6           &none
-&none  &none  &none     &none     &none     &none                  &none  &none  &none  &mo 8  &mouse_layer 6  &none
+&none  &none  &none     &none     &none     &none                  &none  &none  &none  &none  &none  &none
+&none  &mo 9  &mkp MB2  &mkp MB3  &mkp MB1  &mo 8                  &none  &none  &none  &none  &mo 7  &none
+&none  &none  &none     &none     &none     &none                  &none  &none  &none  &none  &none  &none
               &none     &none     &none     &none  &none    &none  &none  &none  &none  &none
             >;
 
             display-name = "MOUSE";
+        };
+
+        mouse_pressed {
+            display-name = "MOUSE";
+            bindings = <
+&none  &none  &none     &none     &none     &none                  &none  &none  &none  &none   &none           &none
+&none  &mo 9  &mkp MB2  &mkp MB3  &mkp MB1  &mo 8                  &none  &none  &none  &mo 10  &mo 6           &none
+&none  &none  &none     &none     &none     &none                  &none  &none  &none  &mo 9   &mouse_layer 6  &none
+              &none     &none     &none     &none  &none    &none  &none  &none  &none  &none
+            >;
         };
 
         scroll {
