@@ -27,7 +27,7 @@ include:
 #    shield: velvet_v3_left_qube
 
   - board: ergohaven
-    shield: velvet_v3_ui_left
+#    shield: velvet_v3_ui_left
 #  - board: ergohaven
 #    shield: velvet_v3_ui_right
 #    keymap: velvet_v3_ui_ruen
@@ -49,8 +49,8 @@ include:
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: velvet_v3_ui_qube_ruen-ergohaven-zmk
-  - board: ergohaven
-    shield: velvet_v3_ui_right_qube
+#  - board: ergohaven
+#    shield: velvet_v3_ui_right_qube
 
 #  - board: ergohaven
 #    shield: op36_left
