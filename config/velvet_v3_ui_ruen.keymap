@@ -37,21 +37,15 @@
     combos {
         compatible = "zmk,combos";
 
-        cmben {
-            bindings = <&layer_en>;
-            key-positions = <3 4>;
-            layers = <4>;
+        cmb_mouse {
+            bindings = <&mo 7>;
+            key-positions = <33 34>;
+            layers = <0 3>;
         };
 
-        cmbru {
-            bindings = <&layer_ru>;
-            key-positions = <3 4>;
-            layers = <0>;
-        };
-
-        cmbmouse {
-            bindings = <&mouse_layer 7>;
-            key-positions = <19 20>;
+        cmb_scroll {
+            bindings = <&mo 8>;
+            key-positions = <34 33 32>;
             layers = <0 3>;
         };
     };
@@ -141,7 +135,7 @@
             bindings = <
 &none      &layer_ru  &layer_en  &kp LBRC  &kp RBRC  &kp BSLH                  &kp FSLH  &kp N7  &kp N8  &kp N9   &kp MINUS  &kp BACKSPACE
 &kp CAPS   &kp LT     &kp GT     &kp LPAR  &kp RPAR  &kp PIPE                  &kp STAR  &kp N4  &kp N5  &kp N6   &kp PLUS   &none
-&kp RSHFT  &none      &none      &kp LBKT  &kp RBKT  &none                     &none     &kp N1  &kp N2  &kp N3   &kp EQUAL  &kp RSHFT
+&kp LSHFT  &none      &none      &kp LBKT  &kp RBKT  &none                     &none     &kp N1  &kp N2  &kp N3   &kp EQUAL  &kp RSHFT
                       &none      &none     &none     &mo 6     &none    &none  &none     &none   &kp N0  &kp DOT
             >;
 
@@ -162,7 +156,7 @@
             bindings = <
 &none      &none     &none          &none        &none      &none                    &en GRAVE    &en APOS    &kp RU_DOUBLE_QUOTES  &en AT        &en HASH     &kp BACKSPACE
 &kp TAB    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &none                    &kp RU_EXCL  &kp RU_DOT  &kp RU_COMMA          &kp RU_COLON  &kp RU_SEMI  &kp RU_QUESTION
-&kp LSHFT  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp DEL                  &en TILDE    &en CARET   &kp RU_UNDER          &en AMPS      &en DLLR     &kp LSHFT
+&kp LSHFT  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp DEL                  &en TILDE    &en CARET   &kp RU_UNDER          &en AMPS      &en DLLR     &kp RSHFT
                      &none          &none        &none      &none    &none    &none  &mo 6        &none       &kp RU_PRCNT          &none
             >;
 
@@ -183,7 +177,7 @@
         fn {
             bindings = <
 &kp F1  &kp F2     &kp F3    &kp F4    &kp F5     &kp F6                  &kp F7  &kp F8     &kp F9    &kp F10   &kp F11    &kp F12
-&none   &kp LSHFT  &kp LALT  &kp LGUI  &kp LCTRL  &none                   &none   &kp LCTRL  &kp LGUI  &kp LALT  &kp LSHFT  &none
+&none   &kp LSHFT  &kp LALT  &kp LGUI  &kp LCTRL  &none                   &none   &kp LCTRL  &kp RGUI  &kp RALT  &kp RSHFT  &none
 &none   &none      &none     &none     &none      &none                   &none   &none      &none     &none     &none      &none
                    &none     &none     &none      &none   &none    &none  &none   &none      &none     &none
             >;
@@ -193,10 +187,10 @@
 
         mouse {
             bindings = <
-&none  &none  &none     &none     &none     &none                  &none  &none  &none  &none  &none  &none
-&none  &mo 9  &mkp MB2  &mkp MB3  &mkp MB1  &mo 8                  &none  &none  &none  &none  &none  &none
-&none  &none  &none     &none     &none     &none                  &none  &none  &none  &none  &none  &none
-              &none     &none     &none     &none  &none    &none  &none  &none  &none  &none
+&none  &none  &none      &none      &none      &none                  &none  &none  &none  &none  &none  &none
+&none  &none  &mkp RCLK  &mkp MCLK  &mkp LCLK  &none                  &none  &none  &none  &none  &none  &none
+&none  &none  &none      &none      &none      &none                  &none  &none  &none  &none  &none  &none
+              &none      &none      &none      &none  &none    &none  &none  &none  &none  &none
             >;
 
             display-name = "MOUSE";
@@ -204,24 +198,13 @@
 
         scroll {
             bindings = <
-&none  &none  &none     &none     &none     &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &mkp MB2  &mkp MB3  &mkp MB1  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none     &none     &none     &none                  &none  &none  &none  &none  &none  &none
-              &none     &none     &none     &none  &none    &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
+              &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
             >;
 
             display-name = "SCROLL";
-        };
-
-        sniper {
-            bindings = <
-&none  &none  &none     &none     &none     &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &mkp MB2  &mkp MB3  &mkp MB1  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none     &none     &none     &none                  &none  &none  &none  &none  &none  &none
-              &none     &none     &none     &none  &none    &none  &none  &none  &none  &none
-            >;
-
-            display-name = "SNIPER";
         };
     };
 };
