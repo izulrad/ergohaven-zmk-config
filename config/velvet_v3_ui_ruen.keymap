@@ -48,6 +48,12 @@
             key-positions = <3 4>;
             layers = <0>;
         };
+
+        cmbmouse {
+            bindings = <&mouse_layer 7>;
+            key-positions = <19 20>;
+            layers = <0 3>;
+        };
     };
 
     macros {
@@ -111,10 +117,10 @@
 
         en {
             bindings = <
-&kp ESC    &kp B  &kp Y     &kp O     &kp U      &none                        &none  &kp L           &kp D  &kp W  &kp Z  &kp BSPC
-&kp TAB    &kp C  &kp I     &kp E     &kp A      &none                        &none  &kp H           &kp T  &kp S  &kp N  &kp Q
-&kp LSHFT  &kp G  &kp X     &kp J     &kp K      &none                        &none  &kp R           &kp M  &kp F  &kp P  &kp RSHFT
-                  &kp LALT  &kp LGUI  &kp LCTRL  &mo 1  &kp SPACE    &kp RET  &mo 2  &mouse_layer 6  &none  &none
+&kp ESC    &kp B  &kp Y     &kp O     &kp U      &none                        &mo 7   &kp L  &kp D  &kp W  &kp Z  &kp BSPC
+&kp TAB    &kp C  &kp I     &kp E     &kp A      &none                        &tog 7  &kp H  &kp T  &kp S  &kp N  &kp Q
+&kp LSHFT  &kp G  &kp X     &kp J     &kp K      &none                        &none   &kp R  &kp M  &kp F  &kp P  &kp RSHFT
+                  &kp LALT  &kp LGUI  &kp LCTRL  &mo 1  &kp SPACE    &kp RET  &mo 2   &none  &none  &none
             >;
 
             display-name = "EN";
@@ -125,7 +131,7 @@
 &none      &none     &none          &none        &none      &none                    &kp GRAVE  &kp APOS   &kp DQT    &kp AT     &kp HASH  &kp BACKSPACE
 &kp TAB    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &none                    &kp EXCL   &kp DOT    &kp COMMA  &kp COLON  &kp SEMI  &kp QMARK
 &kp LSHFT  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp DEL                  &kp TILDE  &kp CARET  &kp UNDER  &kp AMPS   &kp DLLR  &kp RSHFT
-                     &none          &none        &none      &none    &none    &none  &mo 10     &none      &kp PRCNT  &none
+                     &none          &none        &none      &none    &none    &none  &mo 6      &none      &kp PRCNT  &none
             >;
 
             label = "S-EN-1";
@@ -136,7 +142,7 @@
 &none      &layer_ru  &layer_en  &kp LBRC  &kp RBRC  &kp BSLH                  &kp FSLH  &kp N7  &kp N8  &kp N9   &kp MINUS  &kp BACKSPACE
 &kp CAPS   &kp LT     &kp GT     &kp LPAR  &kp RPAR  &kp PIPE                  &kp STAR  &kp N4  &kp N5  &kp N6   &kp PLUS   &none
 &kp RSHFT  &none      &none      &kp LBKT  &kp RBKT  &none                     &none     &kp N1  &kp N2  &kp N3   &kp EQUAL  &kp RSHFT
-                      &none      &none     &none     &mo 10    &none    &none  &none     &none   &kp N0  &kp DOT
+                      &none      &none     &none     &mo 6     &none    &none  &none     &none   &kp N0  &kp DOT
             >;
 
             label = "S-EN-2";
@@ -148,7 +154,7 @@
 &kp ESC    &kp RU_CYRILLIC_EF   &kp RU_CYRILLIC_YERU       &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_YA   &kp RU_CYRILLIC_IO                        &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_ER         &kp RU_CYRILLIC_PE     &kp RU_CYRILLIC_HA   &kp BSPC
 &kp TAB    &kp RU_CYRILLIC_GHE  &kp RU_CYRILLIC_I          &kp RU_CYRILLIC_IE  &kp RU_CYRILLIC_O    &kp RU_CYRILLIC_U                         &kp RU_CYRILLIC_EL       &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EN     &kp RU_CYRILLIC_ZE   &kp RU_CYRILLIC_ZHE
 &kp LSHFT  &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_YU  &kp RU_CYRILLIC_TSE  &kp RU_CYRILLIC_E                         &kp RU_CYRILLIC_BE       &kp RU_CYRILLIC_DE  &kp RU_CYRILLIC_VE         &kp RU_CYRILLIC_KA     &kp RU_CYRILLIC_CHE  &kp RSHFT
-                                &kp LALT                   &kp LGUI            &kp LCTRL            &mo 4               &kp SPACE    &kp RET  &mo 5                    &cap_sen 6 6        &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_SHCHA
+                                &kp LALT                   &kp LGUI            &kp LCTRL            &mo 4               &kp SPACE    &kp RET  &mo 5                    &none               &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_SHCHA
             >;
         };
 
@@ -157,7 +163,7 @@
 &none      &none     &none          &none        &none      &none                    &en GRAVE    &en APOS    &kp RU_DOUBLE_QUOTES  &en AT        &en HASH     &kp BACKSPACE
 &kp TAB    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &none                    &kp RU_EXCL  &kp RU_DOT  &kp RU_COMMA          &kp RU_COLON  &kp RU_SEMI  &kp RU_QUESTION
 &kp LSHFT  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp DEL                  &en TILDE    &en CARET   &kp RU_UNDER          &en AMPS      &en DLLR     &kp LSHFT
-                     &none          &none        &none      &none    &none    &none  &mo 10       &none       &kp RU_PRCNT          &none
+                     &none          &none        &none      &none    &none    &none  &mo 6        &none       &kp RU_PRCNT          &none
             >;
 
             label = "S-RU-1";
@@ -168,31 +174,32 @@
 &none      &layer_ru  &layer_en  &en LBRC     &en RBRC     &kp RU_BSLH                  &kp RU_FSLH  &kp N7  &kp N8  &kp N9      &kp RU_MINUS  &kp BACKSPACE
 &kp CAPS   &en LT     &en GT     &kp RU_LPAR  &kp RU_RPAR  &en PIPE                     &kp RU_STAR  &kp N4  &kp N5  &kp N6      &kp RU_PLUS   &none
 &kp LSHFT  &none      &none      &en LBKT     &en RBKT     &none                        &none        &kp N1  &kp N2  &kp N3      &kp RU_EQUAL  &kp RSHFT
-                      &none      &none        &none        &mo 10       &none    &none  &none        &none   &kp N0  &kp RU_DOT
+                      &none      &none        &none        &mo 6        &none    &none  &none        &none   &kp N0  &kp RU_DOT
             >;
 
             label = "S-RU-2";
         };
 
-        mouse {
+        fn {
             bindings = <
-&none  &none  &none     &none     &none     &none                  &none  &none  &none  &none  &none           &none
-&none  &mo 9  &mkp MB2  &mkp MB3  &mkp MB1  &mo 8                  &none  &none  &none  &none  &mouse_layer 7  &none
-&none  &none  &none     &none     &none     &none                  &none  &none  &none  &none  &none           &none
-              &none     &none     &none     &none  &none    &none  &none  &none  &none  &none
+&kp F1  &kp F2     &kp F3    &kp F4    &kp F5     &kp F6                  &kp F7  &kp F8     &kp F9    &kp F10   &kp F11    &kp F12
+&none   &kp LSHFT  &kp LALT  &kp LGUI  &kp LCTRL  &none                   &none   &kp LCTRL  &kp LGUI  &kp LALT  &kp LSHFT  &none
+&none   &none      &none     &none     &none      &none                   &none   &none      &none     &none     &none      &none
+                   &none     &none     &none      &none   &none    &none  &none   &none      &none     &none
             >;
 
-            display-name = "MOUSE";
+            label = "FN";
         };
 
-        mouse_pressed {
-            display-name = "MOUSE";
+        mouse {
             bindings = <
 &none  &none  &none     &none     &none     &none                  &none  &none  &none  &none  &none  &none
 &none  &mo 9  &mkp MB2  &mkp MB3  &mkp MB1  &mo 8                  &none  &none  &none  &none  &none  &none
 &none  &none  &none     &none     &none     &none                  &none  &none  &none  &none  &none  &none
               &none     &none     &none     &none  &none    &none  &none  &none  &none  &none
             >;
+
+            display-name = "MOUSE";
         };
 
         scroll {
@@ -215,17 +222,6 @@
             >;
 
             display-name = "SNIPER";
-        };
-
-        fn {
-            bindings = <
-&kp F1  &kp F2     &kp F3    &kp F4    &kp F5     &kp F6                  &kp F7  &kp F8     &kp F9    &kp F10   &kp F11    &kp F12
-&none   &kp LSHFT  &kp LALT  &kp LGUI  &kp LCTRL  &none                   &none   &kp LCTRL  &kp LGUI  &kp LALT  &kp LSHFT  &none
-&none   &none      &none     &none     &none      &none                   &none   &none      &none     &none     &none      &none
-                   &none     &none     &none      &none   &none    &none  &none   &none      &none     &none
-            >;
-
-            label = "FN";
         };
     };
 };
