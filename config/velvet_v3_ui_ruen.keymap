@@ -239,7 +239,7 @@
     input-processors = <&zip_x_scaler 1 1>, <&zip_y_scaler 1 2>;
 
     scroller {
-        layers = <8>;
+        layers = <9>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_xy_scaler 1 32>,
@@ -247,7 +247,7 @@
     };
 
     sniper {
-        layers = <7>;
+        layers = <8>;
         input-processors = <&zip_xy_scaler 1 10>;
     };
 };
