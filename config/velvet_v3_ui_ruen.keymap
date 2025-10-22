@@ -111,10 +111,10 @@
 
         en {
             bindings = <
-&kp ESC    &kp Q  &kp W     &kp E     &kp R      &kp T                        &kp Y  &kp U  &kp I  &kp O  &kp P  &kp BSPC
-&kp TAB    &kp A  &kp S     &kp D     &kp F      &kp G                        &kp H  &kp J  &kp K  &kp L  &none  &none
-&kp LSHFT  &kp Z  &kp X     &kp C     &kp V      &kp B                        &kp N  &kp M  &none  &none  &none  &none
-                  &kp LALT  &kp LGUI  &kp LCTRL  &mo 1  &kp SPACE    &kp RET  &mo 2  &none  &none  &none
+&kp ESC    &kp Q  &kp W  &kp E  &kp R  &kp T                        &kp Y  &kp U  &kp I  &kp O  &kp P  &kp BSPC
+&kp TAB    &kp A  &kp S  &kp D  &kp F  &kp G                        &kp H  &kp J  &kp K  &kp L  &none  &none
+&kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B                        &kp N  &kp M  &none  &none  &none  &kp RSHFT
+                  &none  &none  &none  &mo 1  &kp SPACE    &kp RET  &mo 2  &none  &none  &none
             >;
 
             display-name = "EN";
@@ -148,7 +148,7 @@
 &kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                        &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp BSPC
 &kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                        &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL         &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
 &kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                         &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU     &kp RU_CYRILLIC_HA   &kp RSHFT
-                                    &kp LALT              &kp LGUI            &kp LCTRL           &mo 4               &kp SPACE    &kp RET  &mo 5               &none                      &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_IO
+                                    &none                 &none               &none               &mo 4               &kp SPACE    &kp RET  &mo 5               &none                      &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_IO
             >;
         };
 
@@ -176,10 +176,10 @@
 
         fn {
             bindings = <
-&kp F1           &kp F2     &kp F3    &kp F4    &kp F5     &kp F6                     &kp F7     &kp F8     &kp F9      &kp F10   &kp F11    &kp F12
-&kp TAB          &kp LSHFT  &kp LALT  &kp LGUI  &kp LCTRL  &kp SPACE                  &kp ENTER  &kp LCTRL  &kp RGUI    &kp RALT  &kp RSHFT  &kp BSPC
-&kp PRINTSCREEN  &none      &none     &none     &none      &none                      &none      &none      &none       &none     &none      &none
-                            &none     &none     &none      &none      &none    &none  &none      &none      &kp C_MENU  &none
+&kp F1           &kp F2     &kp F3          &kp F4          &kp F5     &kp F6                      &kp F7           &kp F8     &kp F9             &kp F10   &kp F11    &kp F12
+&kp TAB          &kp LSHFT  &kp LALT        &kp LGUI        &kp LCTRL  &kp INSERT                  &kp PAUSE_BREAK  &kp LCTRL  &kp RGUI           &kp RALT  &kp RSHFT  &none
+&kp PRINTSCREEN  &none      &none           &none           &none      &none                       &none            &none      &none              &none     &none      &none
+                            &kp KP_NUMLOCK  &kp SCROLLLOCK  &none      &none       &none    &none  &none            &none      &kp K_APPLICATION  &none
             >;
 
             label = "FN";
@@ -187,10 +187,10 @@
 
         mouse {
             bindings = <
-&none  &none  &none  &none  &none      &none                         &none  &none      &none      &none      &none  &none
-&none  &none  &none  &none  &none      &none                         &none  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 8  &none
-&none  &none  &none  &none  &none      &none                         &none  &none      &none      &none      &mo 9  &none
-              &none  &none  &kp LCTRL  &kp LALT  &kp LSHFT    &none  &none  &none      &none      &none
+&tog 7  &none  &none      &none      &none      &none                         &none   &none      &none      &none      &none  &tog 7
+&none   &mo 8  &mkp RCLK  &mkp MCLK  &mkp LCLK  &tog 9                        &tog 9  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 8  &none
+&none   &none  &none      &none      &none      &none                         &none   &none      &none      &none      &none  &none
+               &none      &none      &kp LCTRL  &kp LALT  &kp LSHFT    &none  &none   &none      &none      &none
             >;
 
             display-name = "MOUSE";
@@ -199,10 +199,10 @@
         sniper {
             display-name = "SNIPER";
             bindings = <
-&none  &none  &none  &none  &none  &none                  &none  &none      &none      &none      &none  &none
-&none  &none  &none  &none  &none  &none                  &none  &mkp LCLK  &mkp MCLK  &mkp RCLK  &none  &none
-&none  &none  &none  &none  &none  &none                  &none  &none      &none      &none      &none  &none
-              &none  &none  &none  &none  &none    &none  &none  &none      &none      &none
+&none  &none  &none      &none      &none      &none                         &none  &none      &none      &none      &none  &none
+&none  &none  &mkp RCLK  &mkp MCLK  &mkp LCLK  &none                         &none  &mkp LCLK  &mkp MCLK  &mkp RCLK  &none  &none
+&none  &none  &none      &none      &none      &none                         &none  &none      &none      &none      &none  &none
+              &none      &none      &kp LCTRL  &kp LALT  &kp LSHFT    &none  &none  &none      &none      &none
             >;
         };
 
