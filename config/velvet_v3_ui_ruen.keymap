@@ -39,13 +39,13 @@
 
         cmb_tog_mouse {
             bindings = <&tog 7>;
-            key-positions = <33 34>;
+            key-positions = <19 20>;
             layers = <0 3 7>;
         };
 
         cmb_mo_mouse {
             bindings = <&mo 7>;
-            key-positions = <25 26>;
+            key-positions = <16 15>;
             layers = <0 3>;
         };
     };
