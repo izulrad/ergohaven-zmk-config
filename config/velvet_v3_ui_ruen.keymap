@@ -208,10 +208,10 @@
 
         scroll {
             bindings = <
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-              &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+&tog 9  &none  &none  &none  &none  &none                   &none   &none  &none  &none  &none  &tog 9
+&none   &none  &none  &none  &none  &tog 9                  &tog 9  &none  &none  &none  &none  &none
+&none   &none  &none  &none  &none  &none                   &none   &none  &none  &none  &none  &none
+               &none  &none  &none  &none   &none    &none  &none   &none  &none  &none
             >;
 
             display-name = "SCROLL";
