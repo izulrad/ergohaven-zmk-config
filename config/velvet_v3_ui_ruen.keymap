@@ -40,7 +40,7 @@
         cmb_tog_mouse {
             bindings = <&tog 7>;
             key-positions = <33 34>;
-            layers = <0 3>;
+            layers = <0 3 7>;
         };
     };
 
