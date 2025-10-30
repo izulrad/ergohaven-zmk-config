@@ -42,12 +42,6 @@
             key-positions = <19 20>;
             layers = <0 3>;
         };
-
-        cmb_tog_mouse_off {
-            bindings = <&tog 7>;
-            key-positions = <21 20>;
-            layers = <0 3>;
-        };
     };
 
     macros {
@@ -188,7 +182,7 @@
         mouse {
             bindings = <
 &kp ESC         &none      &none      &none      &kp LG(LS(R))  &none                                  &none   &none      &none      &none      &none   &kp BSPC
-&kp TAB         &kp LG(A)  &kp LALT   &kp LGUI   &kp LCTRL      &kp LA(LG(S))                          &tog 9  &mkp LCLK  &mkp MCLK  &mkp RCLK  &tog 8  &none
+&kp TAB         &kp LG(A)  &kp LALT   &kp LGUI   &kp LCTRL      &kp LA(LG(S))                          &tog 9  &mkp LCLK  &mkp MCLK  &mkp RCLK  &tog 8  &tog 7
 &kp LEFT_SHIFT  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)      &kp DEL                                &none   &none      &none      &none      &none   &none
                            &none      &none      &none          &none          &kp SPACE    &kp ENTER  &none   &none      &none      &none
             >;
@@ -197,7 +191,7 @@
         };
 
         sniper {
-            display-name = "MOUSE";
+            display-name = "rrrr";
             bindings = <
 &kp ESC         &none      &none      &none      &kp LG(LS(R))  &none                                  &none   &none      &none      &none      &none   &kp BSPC
 &kp TAB         &kp LG(A)  &kp LALT   &kp LGUI   &kp LCTRL      &kp LA(LG(S))                          &tog 9  &mkp LCLK  &mkp MCLK  &mkp RCLK  &tog 8  &none
