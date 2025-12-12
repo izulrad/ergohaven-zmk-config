@@ -7,9 +7,9 @@
 #include <dt-bindings/zmk/pointing.h>
 
 &mt {
-    tapping-term-ms = <150>;
-    flavor = "balanced";
-    hold-trigger-on-release;
+    tapping-term-ms = <200>;
+    flavor = "tap-preferred";
+    quick-tap-ms = <150>;
 };
 
 / {
@@ -45,7 +45,7 @@
 
         cmb_tog_mouse_on {
             bindings = <&tog 7>;
-            key-positions = <19 20>;
+            key-positions = <7 8 9>;
             layers = <0 3>;
         };
     };
