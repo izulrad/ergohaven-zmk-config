@@ -177,7 +177,7 @@
             bindings = <
 &kp F1           &kp F2     &kp F3          &kp F4          &kp F5     &kp F6                      &kp F7           &kp F8     &kp F9             &kp F10   &kp F11    &kp F12
 &kp TAB          &kp LSHFT  &kp LALT        &kp LGUI        &kp LCTRL  &kp INSERT                  &kp PAUSE_BREAK  &kp LCTRL  &kp RGUI           &kp RALT  &kp RSHFT  &none
-&kp PRINTSCREEN  &none      &none           &none           &none      &none                       &none            &none      &none              &none     &none      &none
+&kp PRINTSCREEN  &none      &none           &none           &none      &none                       &none            &none      &none              &none     &kp F23    &kp F24
                             &kp KP_NUMLOCK  &kp SCROLLLOCK  &none      &none       &none    &none  &none            &none      &kp K_APPLICATION  &none
             >;
 
