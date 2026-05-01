@@ -140,7 +140,7 @@
 &none     &layer_ru  &layer_en  &en LBRC     &en RBRC     &kp RU_BSLH                  &kp RU_FSLH  &kp N7  &kp N8  &kp N9      &kp RU_MINUS  &kp BACKSPACE
 &kp CAPS  &en LT     &en GT     &kp RU_LPAR  &kp RU_RPAR  &en PIPE                     &kp RU_STAR  &kp N4  &kp N5  &kp N6      &kp RU_PLUS   &none
 &none     &none      &none      &en LBKT     &en RBKT     &none                        &none        &kp N1  &kp N2  &kp N3      &kp RU_EQUAL  &none
-                     &layer_en  &layer_ru    &none        &mo 6        &none    &none  &none        &none   &kp N0  &kp RU_DOT
+                     &layer_ru  &layer_en    &none        &mo 6        &none    &none  &none        &none   &kp N0  &kp RU_DOT
             >;
 
             label = "S-RU-2";
